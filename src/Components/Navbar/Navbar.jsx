@@ -18,33 +18,34 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          {menu === "shop" ? <hr /> : <></>}
+          Shop{menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("mens");
           }}
         >
-          {menu === "mens" ? <hr /> : <></>}
+          Men{menu === "mens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("womens");
           }}
         >
-          {menu === "womens" ? <hr /> : <></>}
+          Women{menu === "womens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("kids");
           }}
         >
-          {menu === "kids" ? <hr /> : <></>}
+          Kids{menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
         <button>Login</button>
         <img src={cart_icon} alt="" />
+        <div className="nav-cart-count">0</div>
       </div>
     </div>
   );
